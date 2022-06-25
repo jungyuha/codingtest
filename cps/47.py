@@ -48,4 +48,4 @@ for x in range (1,n+1):
                 break
         if(flag == 0):
             cnt = cnt + 1
-#print(cnt)
+print(cnt)
