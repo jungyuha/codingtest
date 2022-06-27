@@ -20,17 +20,21 @@ import sys
 n = int(sys.stdin.readline())
 a=[]
 b=[] # 측면
+res = 0
 a.append(list(map(int,sys.stdin.readline().split())))
 for i in range(1,n):
     a.append(a[0].copy())
-print(a)
+#print(a)
 b = list(map(int,sys.stdin.readline().split()))
-print(b)
+#print(b)
 for i in range(0,n):
     for j in range(0,n):
-        print("i , j : %d , %d " % (i, j))
-        print("a[i][j] , b[i] : %d , %d " % (a[i][j], b[i]))
+        #print("i , j : %d , %d " % (i, j))
+        #print("a[i][j] , b[i] : %d , %d " % (a[i][j], b[i]))
         if(a[i][j] > b[i]):
             a[i][j] = b[i]
-        print(a)
-print(a)
+        #print(a)
+for i in range(0,n):
+    for j in range(0,n):
+        res = res + a[i][j]
+print(res)
