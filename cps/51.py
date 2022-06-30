@@ -20,20 +20,54 @@
 # 2 3
 # ▣ 출력예제 1
 # 16
+# 0 0 0 0 0 0 0 0
+# 0 3 5 1 3 1 3 2
+# 0 1 2 1 3 1 1 2
+# 0 1 3 1 5 1 3 4
+# 0 5 1 1 3 1 3 2
+# 0 3 1 1 3 1 1 2
+# 0 1 3 1 3 1 2 2
 
-height, width = map(int, input('숫자 두 개를 입력하세요: ').split())
-territory=[list(map(int, input().split())) for _ in range(height)]
-dy = [[0 for i in range(width+1)] for j in range(height+1)] # 원점에서 해당 좌표까지의 합 모음 (가장자리 0 추가)
-small_height, small_width = map(int, input('숫자 두 개를 입력하세요: ').split())
-def get_max_large_territory():
-    max=-21400000
-    for y in range(1,len(dy)): # 가장자리 0 초기화 1 ~ 6 (dy)
-        for x in range(1,len(dy[y])): # 가장자리 0 초기화 1 ~ 7 (dy)
-            dy[y][x]=dy[y-1][x]+dy[y][x-1]-dy[y-1][x-1]+territory[y-1][x-1]
-    for y in range(small_height+1,len(dy)): # 1~5 인데 가장자리 0 초기화라서 2~6
-        for x in range(small_width+1,len(dy[y])): # 2~6 가장자리 0 초기화라서 2~6 3~7
-            tmp=dy[y][x]-dy[y][x-small_width]-dy[y-small_height][x]+dy[y-small_height][x-small_width]
-            if(tmp>max):
-                max=tmp
-    print(max)
-get_max_large_territory()
+import sys
+
+h , w = map(int,sys.stdin.readline().split())
+a=[]
+cntmap=[]
+res = 0
+max = -999
+for i in range(0,h):
+    a.append(list(map(int,sys.stdin.readline().split())))
+    a[i].insert(0,0)
+    cntmap.append([0 for i in range(0,w+1)])
+a.insert(0,[0 for i in range(0,w+1)])
+cntmap.append([0 for i in range(0,w+1)])
+print(a)
+
+hh , ww = map(int,sys.stdin.readline().split())
+
+for y in range (1,h+1):
+    for x in range(1,w+1):
+        print("X : %d" % x)
+        print("Y : %d" % y)
+        cntmap[y][x] = cntmap[y][x-1]+cntmap[y-1][x]-cntmap[y-1][x-1]+a[y][x]
+        print("cntmap[y][x-1] : %d" % cntmap[y][x-1])
+        print("cntmap[y-1][x] : %d" % cntmap[y-1][x])
+        print("cntmap[y-1][x-1] : %d" % cntmap[y-1][x-1])
+        print("a[y][x] : %d" % a[y][x])
+for i in range(0,h):
+    print(cntmap[i])
+
+for yy in range (hh , h+1):
+    for xx in range (ww ,w+1):
+        print("Y : %d" % yy)
+        print("X : %d" % xx)
+        print("cntmap[yy][xx] : %d" % cntmap[yy][xx])
+        tmp =cntmap[yy][xx]-cntmap[yy][xx-ww]-cntmap[yy-hh][xx]+cntmap[yy-hh][xx-ww]
+        print("cntmap[yy][xx-ww] : %d , %d" % (cntmap[yy][xx-ww] , xx-ww))
+        print("cntmap[yy-hh][xx] : %d , %d" % (cntmap[yy-hh][xx],yy-hh))
+        print("cntmap[yy][xx] : %d" % cntmap[yy][xx])
+        if(max < tmp ):
+            max = tmp
+for i in range(0,h):
+    print(cntmap[i])
+print(max)
