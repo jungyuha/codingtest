@@ -16,17 +16,97 @@
 # 859963392
 # 예제 => p2,p3,p5=1,1,1 => a[p2],a[p3],a[p5]
 
-# a = [1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, .......]
 import sys
 
 n = int(sys.stdin.readline())
 # n : 10
-a = [1 for  i in range(0,n)]
-min = a[0].copy()
-p2 , p3 , p5 = 0 , 0 , 0
-# a = [1,1,1,1,1,1,1,1,1,1]
-# a2 = 0 , a3 = 0 , a5 = 0
-for i in range(1,n):
-    print(a[i]) # [1,1,1,1,1,1,1,1,1,1]
-
-
+a = [1,1] # Ugly Number 히스토리 배열 (인덱스는 1부터 세도록 한다.)
+min =0
+p2 , p3 , p5 = 1 , 1 , 1 # 현재 위치 (계산전)
+for i in range(1,n+1):
+    if(a[p2]*2 <a[p3]*3):
+        min = a[p2]*2
+    else :
+        min = a[p3]*3
+    if(min > a[p5]*5):
+        min = a[p5]*5
+    if (min == a[p2]*2):
+        p2 = p2 +1
+    if (min == a[p3]*3):
+        p3 = p3 +1
+    if (min == a[p5]*5):
+        p5 = p5 +1
+    a.append(min)
+print(a[n])
+# 반복문 과정
+# if (a[p2] * 2 < a[p3] * 3):  # 1*2 1*3 1*5 비교
+#     min = a[p2] * 2
+# else:
+#     min = a[p3] * 3
+# if (min > a[p5] * 5):
+#     min = a[p5] * 5
+# a.append(min)  # 1,(2)
+#
+# if (a[p2] * 2 < a[p3] * 3):  # (2)*2 (1)*3 (1)*5 비교
+#     min = a[p2] * 2  # 4 > 3
+# else:
+#     min = a[p3] * 3
+# if (min > a[p5] * 5): # 3 < 5
+#     min = a[p5] * 5
+# a.append(min) # 1 , 2 ,(3)
+#
+# if (a[p2] * 2 < a[p3] * 3):  # (2)*2 (2)*3 (1)*5 비교
+#     min = a[p2] * 2
+# else:
+#     min = a[p3] * 3
+# if (min > a[p5] * 5):
+#     min = a[p5] * 5
+# a.append(min)  # 1,2,3,(4)
+#
+# if (a[p2] * 2 < a[p3] * 3):  # (3)*2 (2)*3 (1)*5 비교
+#     min = a[p2] * 2
+# else:
+#     min = a[p3] * 3
+# if (min > a[p5] * 5):
+#     min = a[p5] * 5
+# a.append(min)  # 1,2,3,4,(5)
+#
+# if (a[p2] * 2 < a[p3] * 3):  # (3)*2 (2)*3 (2)*5 비교
+#     min = a[p2] * 2
+# else:
+#     min = a[p3] * 3
+# if (min > a[p5] * 5):
+#     min = a[p5] * 5
+# a.append(min)  # 1,2,3,4,5,6
+#
+# if (a[p2] * 2 < a[p3] * 3):  # (4)*2 (3)*3 (2)*5 비교
+#     min = a[p2] * 2
+# else:
+#     min = a[p3] * 3
+# if (min > a[p5] * 5):
+#     min = a[p5] * 5
+# a.append(min)  # 1,2,3,4,5,6,8
+#
+# if (a[p2] * 2 < a[p3] * 3):  # (5)*2 (3)*3 (2)*5 비교
+#     min = a[p2] * 2
+# else:
+#     min = a[p3] * 3
+# if (min > a[p5] * 5):
+#     min = a[p5] * 5
+# a.append(min)  # 1,2,3,4,5,6,8,9
+#
+# if (a[p2] * 2 < a[p3] * 3):  # (5)*2 (4)*3 (2)*5 비교
+#     min = a[p2] * 2
+# else:
+#     min = a[p3] * 3
+# if (min > a[p5] * 5):
+#     min = a[p5] * 5
+# a.append(min)  # 1,2,3,4,5,6,8,9,10
+#
+# if (a[p2] * 2 < a[p3] * 3):  # (6)*2 (4)*3 (3)*5 비교
+#     min = a[p2] * 2
+# else:
+#     min = a[p3] * 3
+# if (min > a[p5] * 5):
+#     min = a[p5] * 5
+# a.append(min)  # 1,2,3,4,5,6,8,9,10
