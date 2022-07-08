@@ -24,20 +24,52 @@ mid = math.ceil((1+8)/2)
 end = 8
 
 def func(start,end):
+    res = []
     if(start >= end ):
         return
-    print(start,end)
-    res = []
-    for i in range(start,end+1):
-        res.append(lst[i])
-    print(res)
     mid = math.ceil((start + end) / 2)
     func(start, mid-1)
     func(mid, end)
+    p1 = start
+    p2 = mid
+    tmp = []
+    while p1 < mid and p2 <= end :
+        if lst[p1] > lst[p2]:
+            tmp.append(lst[p2])
+            p2 = p2 + 1
+        else:
+            tmp.append(lst[p1])
+            p1 = p1 + 1
+    while p1 < mid :
+        tmp.append(lst[p1])
+        p1 = p1 + 1
+    while p2 <= end:
+        tmp.append(lst[p2])
+        p2 = p2 + 1
+    print(tmp)
+    j=0
+    for i in range(start,end+1):
+        lst[i] = tmp[j]
+        j = j + 1
+    #print(res)
+#print(lst)
 
 func(start,end)
-#################
 
+
+#디버깅 과정################
+# def func(start,end):
+#     res = []
+#     cur = start
+#     for i in range(start,end+1):
+#         res.append(lst[i])
+#     print(res)
+#     if(start >= end ):
+#         return
+#     #print(start,end)
+#     mid = math.ceil((start + end) / 2)
+#     func(start, mid-1)
+#     func(mid, end)
 # 7 6 3 1
     # 7 6
         # 7
