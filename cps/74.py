@@ -27,8 +27,56 @@
 # 3
 # 5
 # 2
+import sys
+aList = [0]
+p = 0
+while 1:
+    #print(aList)
+    a = int(sys.stdin.readline())
+    if a == -1 :
+        break
+    elif a > 0 :
+        aList.append(a)
+        p = p + 1
+        child = p
+        while 1 :
+            parent = child // 2
+            if parent > 0 and aList[child] < aList[parent]:
+                    aList[child] , aList[parent] = aList[parent] , aList[child]
+            else :
+                break
+    elif a == 0 :
+        if len(aList) == 1:
+            print("-1")
+            break
+        aList[p], aList[1] = aList[1], aList[p]
+        print(aList.pop(p))
+        p = p - 1
+        parent = 1
+        while 1 :
+            #print(aList)
+            child = 2 * parent
+            if child + 1 < len(aList) :
+                if aList[child] > aList[child+1] :
+                    child = child + 1
+                if aList[parent] > aList[child] :
+                    #print('a')
+                    #print(aList[parent], aList[child])
+                    aList[parent] , aList[child] = aList[child] , aList[parent]
+                    parent = child
+                    #print(aList)
+                else :
+                    break
+            elif child + 1 == len(aList) and aList[parent] > aList[child] :
+                aList[parent] , aList[child] = aList[child] , aList[parent]
+                #print('b')
+                #print(aList[parent], aList[child])
+                #print(aList)
+                break
+            else :
+                break
 
-##########
+########## 디버깅
 # 5 3 2 1 4 6
 # 0 5 3 2 1 4 6
 
@@ -51,7 +99,29 @@
 # child < parent : swap [0 2 5 3]
 # parent = parent // 2 = 0
 
-# <r3>
-# p = 4 , parent = 4 // 2 = 2
+# <r3> 1
+# p = 4 ,parent = p // 2 = 2
 # 0 2 5 3 1
 # child val = q[4] = 1 , parent val = q[2] = 5
+# child < parent : swap [0 2 1 3 5]
+# child = parent = 2
+# <r3> 2
+# parent = parent // 2 = 1
+# child val = q[2] = 1 , parent val = q[1] = 2
+# child < parent : swap [0 1 2 3 5]
+# child = parent = 1
+# <r3> 3
+# parent = parent // 2 = 0
+
+# <r4> : 0(pop)
+# if len(list) == 0 : break
+# [0 1 2 3 5]
+# p = 4 # parent = 1
+# q[p] <-> q[1] : swap [0 5 2 3 1]
+# while
+    # child= 2*parent = 2
+    # if len(list) > child + 1 => child = 더 작은 애
+    #   if list[child] > list[parent] : swap , parent = child
+    #   else : break
+    # elif len(list) = child and list[child] < list[parent] 이면 swap
+    # else : break
