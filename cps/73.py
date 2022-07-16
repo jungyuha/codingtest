@@ -60,7 +60,7 @@ while 1:
         while 1:
             child = 2 * cur
             #print("child :", child)
-            if child + 1 <= len(qList) :
+            if child + 1 < len(qList) :
                 #print("qList:", qList)
                 #print("cur :", cur)
                 if qList[child] < qList[child+1]:
@@ -70,7 +70,7 @@ while 1:
                     cur = child
                 else :
                     break
-            elif child == len(qList) and qList[child] < qList[cur]:
+            elif child + 1 == len(qList) and qList[child] < qList[cur]:
                 qList[child] , qList[cur] = qList[cur] , qList[child]
                 break
             else :
