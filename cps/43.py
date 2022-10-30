@@ -32,7 +32,6 @@ a = list(map(int,sys.stdin.readline().split()))
 def Count(s) :
     sum = 0
     cnt = 1
-
     #print("mid(중간값) : %d" % s)
     for i in range (0,n) :
         #print("i : %d" %i)
