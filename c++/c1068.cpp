@@ -31,7 +31,7 @@ int main(){
     }
     cin >> m ;
     
-    dfs(0);
+    if(m!=0) dfs(0);
 
     cout << cnt << "\n";
     return 0;
