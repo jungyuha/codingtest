@@ -1,10 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-/*
-5
--1 0 0 1 1
-2
-*/
+
 int n,a,m,cnt,max_;
 vector<vector<int>> lst;
 
