@@ -13,14 +13,14 @@ int main(){
     //cout << " " << << "," << '\n';
     cin >> m >> n ;
     cin >> a.first >> a.second >> b.first >> b.second;
-
-    cout << a.first << a.second << b.first << b.second;
+    a.first--; a.second--;  b.first--;b.second--;
     for(int i=0;i<m;i++){
         for(int j=0;j<n;j++){
             cin >> mp1[i][j];
         }
     }
-    q.push({a.first-1,a.second-1});
+    q.push({a.first,a.second});
+    vis[a.first][a.second]=1;
     while(vis[b.first][b.second]==0){
         level++;
         cout << "level " << level << ", q.size :" << q.size() << '\n';
@@ -39,14 +39,14 @@ int main(){
                 }
                 else{
                     q.push({nqy,nqx});
-                    vis[nqy][nqx]=level;
                 }
+                vis[nqy][nqx]=level;
             }
             q.pop();
         }
-        cout << "level " << level << ", qq.size :" << qq.size() << '\n';
         q = qq;
     }
-    cout << vis[b.first][b.second];
+    cout << vis[b.first][b.second]<< "\n";
+  
     return 0;
 }
