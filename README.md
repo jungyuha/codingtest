@@ -8,7 +8,7 @@
 
 ### 1)
 
-![](broken-reference)
+![](.gitbook/assets/image.png)
 
 ### 2) 이진수를 이용해 불리언배열을 표현
 
