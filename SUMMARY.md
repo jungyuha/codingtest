@@ -9,9 +9,11 @@
 * [9. 배열](<README (1).md>)
 * [10. pair 와 tuple 그리고 tie](undefined/10.-pair-tuple-tie.md)
 * [11. 완전 탐색](undefined/11..md)
-* [12. queue](undefined/12.-queue.md)
+* [12. queue와 stack](<undefined/12. queue와 stack.md>)
 * [13. 이진트리](undefined/13..md)
 * [14. 비트 마스킹](<README (1) (1).md>)
+* [15. typedef 사용법](undefined/15.-typedef.md)
+* [999.기타](undefined/999.기타.md)
 
 ## 풀이
 
