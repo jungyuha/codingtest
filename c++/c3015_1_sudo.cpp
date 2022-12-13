@@ -29,34 +29,30 @@ stack<pair<ll, ll>> s;
     (temp와 연속된 같은 값 갯수) int cnt =1;
     while : s.size() && temp >= s.top().first (새로운 temp값이 최신값보다 크거나 같은 경우)
         res = res + s.top().second;
-        if(temp == s.top().first)
-            cnt = s.top().second+1;
+        if(temp == s.top().first) (새로운 temp값이 최신값과 같은 경우)
+            cnt = s.top().second+1; (다음 얘보다 큰 값을 가진 요소가 들어와서 얘를 허물 때 그 앞에 있는 같은 값의 애들은 이미 지워진 상태 & 누적값만 있는 상태이므로)
         else
             cnt = 1;
-        
-    (인접 카운팅)res++; 
-    s.push(temp)
-
-    (반복(1개의 temp당) : stack이 빌 때까지 AND 제일 최근에 들어온 애가 temp보다 크면 안된다.)
-        (제일 최근 들어온 애의 cnt를 결과값에 더한다.) ret += s.top().second; 
-        if (제일 최근 들어온 애와 temp값이 같다면) s.top().first == temp
-            (temp의 cnt를 1개 더 카운트한다.) cnt = s.top().second + 1;
-        else : cnt =1;
-        (최근에 들어온 애를 삭제한다.)
-    (최근애 들어온 애가 temp보다 큰 경우 인접 부분만 카운트함)
-    (stack에 temp를 넣는다.) s.push({temp, cnt});
+        s.pop(); (자기보다 작거나 같은 애는 무조건 지우므로 추후에 존재할 수가 없음)
+    if(s.size()) :
+        temp값이 더 작은 경우 인접 카운팅)res++; 
+    s.push(temp) (스택에 새로운 temp값을 넣는다.)
 
 *) 시나리오 요약
     temp가 입력이 되면
 (1개의 temp당)
-    if : stack에 이전 입력값이 있으면
+    if : stack에 값이 있으면
         if : 그 이전 입력값이 새로운 입력값보다 작으면 => 다음 애들은 이제 새로운 입력값 이전애들을 못 봄
-            ret += (이전 입력값이 볼 수 있었던 애들)
-            인접이라 마주볼 수 있음 : ret ++;
+            while(스택이 빌 때까지 & temp보다 작은 애들이 있는 동안):
+                ret += (인접 cnt)
+                if temp 앞의 요소보다 작은 애들 :
+                    스택에서 지움
+                if temp 앞의 요소와 같은 애들 :
+                    누적 cnt 계산
+                    스택에서 지움
         if : 그 이전 입력값이 새로운 입력값보다 크면
-            인접이라 마주볼 수 있음 
-        if : 그 이전 입력값이 새로운 입력값보다 같으면 
-            인접이라 마주볼 수 있음
+            ret += 1
+        스택.push(temp)
     stack에 temp를 넣는다.
 
 
