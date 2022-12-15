@@ -46,9 +46,9 @@ for(int i=0;i<a;i++){
     }
     cout <<"\n"; 
 (2) cout << "i("<<i<<") / " ;  
-cout <<"1 ("<< aLst[j].first<<","<<bLst[i]<<") /" ;
-cout <<"2 ("<< aLst[j].second<<") /" ; 
-cout <<"3 ("<< aLst[j].second<<","<<max_<<") /" ;
-cout << "4 ("<<max_index<<") / " ;
-cout <<"5 ("<< max_<<") \n" ;
+(3) cout <<"1 ("<< aLst[j].first<<","<<bLst[i]<<") /" ;
+(4) cout <<"2 ("<< aLst[j].second<<") /" ; 
+(5) cout <<"3 ("<< aLst[j].second<<","<<max_<<") /" ;
+(6) cout << "4 ("<<max_index<<") / " ;
+(7) cout <<"5 ("<< max_<<") \n" ;
 */
