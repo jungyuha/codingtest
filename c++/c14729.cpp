@@ -21,7 +21,7 @@ int main(){
             pq.push(a);
         }
         n--;
-    
+    }
     while(!pq.empty()){
         res.push_back(pq.top());
         pq.pop();
