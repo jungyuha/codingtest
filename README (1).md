@@ -1,6 +1,20 @@
 # 5. 문자열
 
-## \[1] char형 아스키코드
+## \[0] 목차
+
+[#1dd](<README (1).md#1dd> "mention")
+
+[#2](<README (1).md#2> "mention")
+
+[#3](<README (1).md#3> "mention")
+
+[#4-int-int](<README (1).md#4-int-int> "mention")
+
+[#5-split](<README (1).md#5-split> "mention")
+
+[#6](<README (1).md#6> "mention")
+
+## \[1] char형 아스키코드 <a href="#char" id="char"></a>
 
 * a : 97 \~ z : 122
 * A : 65 \~ Z :91
@@ -89,3 +103,26 @@ string s;
 cin >> s;
 vector<string> hw = split(s,":");
 ```
+
+## \[6]   문자열 일부 추출하기
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    string sentence = "i like coding";
+    string find_str = "coding";
+    string replace_str = "test";
+    sentence.replace(sentence.find(find_str), find_str.length(), replace_str);
+    cout << sentence << endl;
+}
+
+// i like test
+```
+
+* setence.find(find\_str) : 전체 문자열에서 "coding"을 찾아 그 위치를 알아냅니다.&#x20;
+* find\_str.length(): 찾아야 할 문자열의 길이를 replace 함수에 알려줍니다.&#x20;
+* replace\_str : 찾아낸 문자열을 교체할 새로운 문자열입니다.
+
