@@ -2,7 +2,7 @@
 
 ## \[0] 목차
 
-[#1dd](<README (1).md#1dd> "mention")
+[#char](<README (1).md#char> "mention")
 
 [#2](<README (1).md#2> "mention")
 
