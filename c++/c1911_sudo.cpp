@@ -31,7 +31,10 @@ priority_queue<int,vector<int>,greater<int>> q1;
         }
         cout << endl;
     }
-
+(2)
+cout << "start : "<<start<<endl;
+(3)
+cout << "q1.top() : "<<cx<<endl;
 *) 기타
 - 각 위치는 0이상 1,000,000,000이하의 정수
 */
