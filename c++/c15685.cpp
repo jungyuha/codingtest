@@ -50,16 +50,9 @@ int main(){
                     fx++;
                 }
                 vis[fy][fx]=1;
-                cout << fx<<","<<fy<<endl;
             }
             t--;
         }
-        for(int i=0;i<10;i++){
-        for(int j=0;j<10;j++){
-            cout<<vis[i][j];
-        }
-        cout << endl;
-    }
         a--;
     }
     for(int i=1;i<100;i++){
@@ -69,11 +62,10 @@ int main(){
                 int nx = j+dx[k]; int ny = i + dy[k];
                 if(vis[ny][nx]==0) {
                     yn = false;
-                    break; ;
+                    break;
                 }
             }
             if(yn) {
-                cout<<"::"<<i<<","<<j<<endl;
                 res++;
             }
         }
