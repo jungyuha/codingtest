@@ -27,7 +27,7 @@ int main(){
     }
     n = 2*a;
 
-    for(int i=1;i<=pow(2,n);i++){
+    for(int i=1;i<=(2,n);i++){
         //cout <<"i : "<<i<<"\n";
         memset(vis,0,sizeof(vis));
         int temp=cur;
