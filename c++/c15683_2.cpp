@@ -9,7 +9,7 @@ vector<pair<int,int>> func2 (int cy,int cx,int di){
     // (1) 
     vector<pair<int,int>> _change;
     if(mp[cy][cx]==1){
-        int nx = cx + dx[di];int ny = cx + dy[di];
+        int nx = cx + dx[di];int ny = cy + dy[di];
         while(nx>=0 && nx < w && ny >=0 && ny < h && mp[ny][nx] != 6){
             if(mp[ny][nx]==0){
                 mp[ny][nx]=9; 
