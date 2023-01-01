@@ -19,6 +19,7 @@
 * [14. 비트 마스킹](<README (1) (1) (1).md>)
 * [15. typedef 사용법](undefined/15.-typedef.md)
 * [16. Greedy 알고리즘(탐욕 알고리즘)](<undefined/16. Greedy 알고리즘(탐욕 알고리즘).md>)
+* [17. 구조체](undefined/17..md)
 * [999.기타](undefined/999.기타.md)
 
 ## 풀이
