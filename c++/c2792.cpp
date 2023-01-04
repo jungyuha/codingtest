@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int n,m,max_,s,e,mid,res;
+int n,m,max_,s,e,mid,res=9999999;
 int mp[300000];
 
 void go(int t1){
@@ -14,7 +14,7 @@ void go(int t1){
         m_cnt+=(mp[i]/mid);
         if(mp[i]%mid > 0) m_cnt++;
     }
-    if(m_cnt == n) res = max(res,mid);
+    if(m_cnt <= n) res = min(res,mid);
     if(m_cnt > n){
         s = mid+1;
     }

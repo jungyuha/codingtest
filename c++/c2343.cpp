@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int n,m,tot,s,e,mid,res=999999;
+int n,m,tot,s=-1,e,mid,res=999999;
 int mp[100000];
 void go(int tot){
-    s  = 1; e = tot;
+    e = tot;
     
     while(s<=e){
         mid = (s+e)/2;
@@ -46,6 +46,7 @@ int main(){
     for(int i=0;i<n;i++){
         cin >> mp[i];
         tot+=mp[i];
+        s = max(s,mp[i]);
     }
 
     go(tot);

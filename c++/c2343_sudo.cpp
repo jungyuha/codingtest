@@ -15,7 +15,7 @@ int mp[100000];
 *) 시나리오
 (mp 순회)
     tot=전체 합 계산
-s = 1; e= tot;
+s = 최소값; e= tot;
 
 while(s<=e) :
     mid = (s+e)/2;

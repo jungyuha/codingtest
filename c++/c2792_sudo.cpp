@@ -26,8 +26,8 @@ while s<=e :
     (색상 수 순회)int i=0;i<n;i++
         m_cnt+=(mp[i]/mid);
         if(mp[i]%mid > 0 ) m_cnt++;
-    if m_cnt == m
-        res = max(res,mid);
+    if m_cnt <= n
+        res = min(res,mid);
     if m_cnt <= m :
         e = mid-1
     else
