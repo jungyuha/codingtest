@@ -20,6 +20,7 @@
 * [15. typedef 사용법](undefined/15.-typedef.md)
 * [16. Greedy 알고리즘(탐욕 알고리즘)](<undefined/16. Greedy 알고리즘(탐욕 알고리즘).md>)
 * [17. 구조체](undefined/17..md)
+* [18. 이진 탐색](undefined/18..md)
 * [999.기타](undefined/999.기타.md)
 
 ## 풀이
@@ -73,5 +74,7 @@
   * [14888(연산자 끼워넣기)](undefined-1/5주차\(그리디,라인스위핑,투포인터\)/14888.md)
 * [6주차(이분탐색과 LIS(최대증가부분수열))](undefined-1/6주차/README.md)
   * [2343(기타수업)](undefined-1/6주차/2343.md)
+  * [2792(보석상자)](undefined-1/6주차/2792.md)
+  * [6236(용돈 관리)](undefined-1/6주차/6236.md)
   * [11053(가장 긴 증가하는 부분 수열)](undefined-1/6주차/11053번.md)
   * [14002(가장 긴 증가하는 부분 수열)](undefined-1/6주차/14002.md)
