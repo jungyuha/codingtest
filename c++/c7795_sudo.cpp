@@ -7,9 +7,6 @@
 *) 메모리
 int t,n,m,a,b,aLst[20000],bLst[20000];
 *) 시나리오
-(b리스트 오름차순 정렬)
-(a리스트 순회) int i=0;i<a;i++
-    lower_bound(bLst,bLst+b,aLst[i])
     
 *) 출력
 (1)
