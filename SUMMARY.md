@@ -22,6 +22,7 @@
 * [17. 구조체](undefined/17..md)
 * [18. 이진 탐색](undefined/18..md)
 * [19. 가장 긴 증가하는 부분 수열(LIS)](undefined/19.-lis.md)
+* [20.점화식](undefined/20..md)
 * [999.기타](undefined/999.기타.md)
 
 ## 풀이
