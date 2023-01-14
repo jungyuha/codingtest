@@ -89,5 +89,6 @@
   * [14003(가장 긴 증가하는 부분 수열)](undefined-1/6주차/14003.md)
   * [2670(연속부분최대곱)](undefined-1/6주차/2670.md)
   * [2565(전깃줄)](undefined-1/6주차/2565.md)
-* [7주차](undefined-1/7/README.md)
-  * [15989(1,2,3더하기 4)](undefined-1/7/15989-1-2-3-4.md)
+* [7주차(DP)](undefined-1/7-dp/README.md)
+  * [15989(1,2,3더하기 4)](undefined-1/7-dp/15989-1-2-3-4.md)
+  * [2240(자두나무)](undefined-1/7-dp/2240.md)
