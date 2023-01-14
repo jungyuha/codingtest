@@ -23,7 +23,11 @@ int main() {
     while(t){
         cin >> p;
         // (2)
-
+        int sum_=0;
+        for(int i=1;i<=3;i++){
+            sum_+=mp[p][i];
+        }
+        cout << sum_ << endl;
         t--;
     }
 
