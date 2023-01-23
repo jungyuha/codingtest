@@ -101,3 +101,7 @@
   * [12865(평범한 배낭)](undefined-1/7-dp/12865.md)
   * [4781(사탕가게)](undefined-1/7-dp/4781.md)
   * [1535(안녕)](undefined-1/7-dp/1535.md)
+<<<<<<< HEAD
+=======
+  * [1513(경로찾기)](undefined-1/7-dp/1513.md)
+>>>>>>> a52f374a5fe47e5bd5b7d16a719de7daefdfe98e
