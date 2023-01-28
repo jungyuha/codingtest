@@ -12,8 +12,6 @@ int main(){
 
 ### (2) 2차원 배열 초기화
 
-* memset()의 경우 초기화시킬 수 있는 값은 0과 -1로 제한이 됩니다.
-
 <pre class="language-cpp"><code class="lang-cpp">int a[51][51];
 bool visited[51][51]; 
 
