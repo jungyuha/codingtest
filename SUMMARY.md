@@ -102,4 +102,4 @@
   * [4781(사탕가게)](undefined-1/7-dp/4781.md)
   * [1535(안녕)](undefined-1/7-dp/1535.md)
   * [1513(경로찾기)](undefined-1/7-dp/1513.md)
-* [Page 1](undefined-1/page-1.md)
+* [1535(안녕)](undefined-1/1535.md)
