@@ -111,3 +111,4 @@
   * [1450(냅색문제)](undefined-1/7/1450.md)
   * [14863(서울에서 경산까지)](undefined-1/7/14863.md)
   * [2342(Dance Dance Revolution)](undefined-1/7/2342-dance-dance-revolution.md)
+  * [1480(보석 모으기)](undefined-1/7/1480.md)
