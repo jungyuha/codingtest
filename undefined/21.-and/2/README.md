@@ -6,13 +6,13 @@
 
 
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 #### 펜윅트리의 Node Index 모양&#x20;
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../../.gitbook/assets/image (2).png>)
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../../.gitbook/assets/image (3).png>)
 
 * **하나의 노드가 나타내는 값 중 알수 있는 정보는, 그노드가 나타내는 범위의**\
   **last index** 이다.
@@ -39,7 +39,7 @@
 
 세그먼트 트리가 다음과 같다고 가정하자
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 1. **값의 소유 여부**&#x20;
    * 세그먼트 트리는 \[0, 7]의 값과, \[0, 3],\[4, 7]의 값을 모두 알고 있다.

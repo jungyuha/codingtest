@@ -25,7 +25,8 @@
 * [20.점화식](undefined/20..md)
 * [21. 세그먼트 트리&펜윅트리](undefined/21.-and/README.md)
   * [(1) 세그먼트 트리](undefined/21.-and/1.md)
-  * [(2) 펜윅트리](undefined/21.-and/2.md)
+  * [(2) 펜윅트리](undefined/21.-and/2/README.md)
+    * [1. 업데이트](undefined/21.-and/2/1..md)
 * [999.기타](undefined/999.기타.md)
 
 ## 풀이
