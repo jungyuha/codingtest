@@ -4,9 +4,11 @@
 
 * [1. 시간 복잡도](README.md)
   * [1.자료구조당 시간복잡도](<undefined/1. 시간 복잡도/1.자료구조당 시간복잡도.md>)
-* [2.](undefined/2..md)
-* [3.](undefined/3..md)
-* [4.](undefined/4..md)
+* [2. 재귀함수](undefined/2./README.md)
+  * [1. 조합](undefined/2./1..md)
+  * [2. 순열](undefined/2./2..md)
+* [3. 누적합](undefined/3..md)
+* [4. 구현](undefined/4..md)
 * [5. 문자열](<README (1).md>)
 * [6.맵](undefined/6.맵.md)
 * [7. vector](undefined/7.-vector.md)
@@ -35,6 +37,11 @@
 
 ## 풀이
 
+* [1주차(문자 배열)](undefined-1/1/README.md)
+  * [2309(아홉 난장이)](undefined-1/1/2309.md)
+  * [10808(알파벳 개수)](undefined-1/1/10808.md)
+  * [2979(트럭 주차)](undefined-1/1/2979.md)
+* [2주차(DFS,BFS그래프)](undefined-1/2-dfs-bfs.md)
 * [3주차(완전탐색,백트래킹)](풀이/3주차\(완전탐색,백트래킹\)/README.md)
   * [17136(색종이)](undefined-1/3주차\(완전탐색,백트래킹\)/17136\(색종이\).md)
   * [2589번](undefined-1/3주차\(완전탐색,백트래킹\)/2589번.md)
