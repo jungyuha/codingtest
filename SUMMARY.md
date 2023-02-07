@@ -26,7 +26,11 @@
 * [21. 세그먼트 트리&펜윅트리](undefined/21.-and/README.md)
   * [(1) 세그먼트 트리](undefined/21.-and/1.md)
   * [(2) 펜윅트리](undefined/21.-and/2/README.md)
-    * [1. 업데이트](undefined/21.-and/2/1..md)
+    * [0. 이진수와 펜윅트리 상관관계](undefined/21.-and/2/0..md)
+    * [1. 생성](undefined/21.-and/2/1..md)
+    * [2. 업데이트](undefined/21.-and/2/2..md)
+    * [3. 구간합 구하기](undefined/21.-and/2/3..md)
+    * [참고](undefined/21.-and/2/undefined.md)
 * [999.기타](undefined/999.기타.md)
 
 ## 풀이

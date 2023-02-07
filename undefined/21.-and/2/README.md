@@ -6,11 +6,11 @@
 
 
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
 
 #### 펜윅트리의 Node Index 모양&#x20;
 
-![](<../../../.gitbook/assets/image (2).png>)
+![](<../../../.gitbook/assets/image (2) (3).png>)
 
 ![](<../../../.gitbook/assets/image (3).png>)
 
