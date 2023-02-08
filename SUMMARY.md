@@ -128,3 +128,5 @@
   * [2342(Dance Dance Revolution)](undefined-1/7/2342-dance-dance-revolution.md)
   * [1480(보석 모으기)](undefined-1/7/1480.md)
   * [3687(성냥개비)](undefined-1/7/3687.md)
+* [8주차(펜윅트리,최단거리)](undefined-1/8/README.md)
+  * [2042(구간합구하기)](undefined-1/8/2042.md)
