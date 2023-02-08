@@ -39,7 +39,7 @@
 
 세그먼트 트리가 다음과 같다고 가정하자
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 
 1. **값의 소유 여부**&#x20;
    * 세그먼트 트리는 \[0, 7]의 값과, \[0, 3],\[4, 7]의 값을 모두 알고 있다.
