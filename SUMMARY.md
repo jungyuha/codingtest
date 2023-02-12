@@ -33,7 +33,8 @@
     * [2. 업데이트](undefined/21.-and/2/2..md)
     * [3. 구간합 구하기](undefined/21.-and/2/3..md)
     * [참고](undefined/21.-and/2/undefined.md)
-* [22. 다익스트라](undefined/22..md)
+* [22. \[최단거리\]다익스트라](undefined/22..md)
+* [23. \[최단거리\]플로이드 워셜](undefined/23..md)
 * [999.기타](undefined/999.기타.md)
 
 ## 풀이
