@@ -7,7 +7,6 @@ using namespace std;
 int n;
 string pwd ;
 char temp[110],str_[110];
-map<string,int> dp;
 queue<pair<string,int>> q;
 void init(){
     //cin >> n;
@@ -45,8 +44,7 @@ int go(){
                 // res = min(res,go(s2,r+1));
                 // dp[s1]=res;
                 //if(s2==pwd) return r+1;
-                if(!dp[s2]) q.push({s2,r+1});
-                dp[s2]=1;
+                q.push({s2,r+1});
                 cout << s2 << endl;
             }
         }
@@ -78,8 +76,7 @@ int go(){
                 //여기서 호출
                 //res = min(res,go(s2,r+1));
                 //if(s2==pwd) return r+1;
-                if(!dp[s2]) q.push({s2,r+1});
-                dp[s2] = 1;
+                q.push({s2,r+1});
                 cout << s2 << endl;
             }
         }   
