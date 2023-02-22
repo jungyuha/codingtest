@@ -14,6 +14,8 @@
 
 [#6](<README (1).md#6> "mention")
 
+[#7](<README (1).md#7> "mention")
+
 ## \[1] char형 아스키코드 <a href="#char" id="char"></a>
 
 * a : 97 \~ z : 122
@@ -104,7 +106,7 @@ cin >> s;
 vector<string> hw = split(s,":");
 ```
 
-## \[6]   문자열 일부 추출하기
+## \[6] 문자열 일부 추출하기
 
 ```cpp
 #include <iostream>
@@ -125,4 +127,33 @@ int main()
 * setence.find(find\_str) : 전체 문자열에서 "coding"을 찾아 그 위치를 알아냅니다.&#x20;
 * find\_str.length(): 찾아야 할 문자열의 길이를 replace 함수에 알려줍니다.&#x20;
 * replace\_str : 찾아낸 문자열을 교체할 새로운 문자열입니다.
+
+## \[7] 숫자로 구성된 문자열 자릿수 계산 및 변경하기
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    string s1 = "12345";
+    cout << s1[0] <<endl;
+    
+    int n=s1[0]-'0';
+    n+=3;
+    cout << char('0'+n) << endl;
+    
+    s1[0]=char('0'+n);
+    cout << s1 << endl;
+}
+
+// 1
+// 4
+// 42435
+```
+
+* s1\[0] : 문자열의 첫번째 문자
+* int n=s1\[0]-'0': 문자열의 첫번째 문자의 숫자(int 타입)
+* char('0'+n) : 문자타입의 숫자
+* s1\[0] = char('0'+n) : 문자열의 첫번째 문자 치환
 
