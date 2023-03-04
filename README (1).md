@@ -16,6 +16,8 @@
 
 [#7](<README (1).md#7> "mention")
 
+[#8](<README (1).md#8> "mention")
+
 ## \[1] char형 아스키코드 <a href="#char" id="char"></a>
 
 * a : 97 \~ z : 122
@@ -76,7 +78,7 @@ string s;
 getline(cin, s)
 ```
 
-## \[4]   문자열을 int로 int를 문자열로
+## \[4]  문자열을 int로 int를 문자열로
 
 ```cpp
 string s;
