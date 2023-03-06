@@ -34,7 +34,6 @@ int go(int r,int c1,int c2,int c3,int m,int k){
     int &res = dp[r][c1][c2][c3][m];
     if(r == n) {return 0;} // 뒤로 넘겼다는 건 == 바로 앞의 수가 pwd와 일치했다는 뜻
     if(res!=-1) { return res;}
-    //if(k==15) { return 0;}
     int m_=1;
     if(m==1){m_=-1;}
     res=INF;
