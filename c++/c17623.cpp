@@ -3,8 +3,8 @@ using namespace std;
 
 int res_1=0,pt=0,n,min_;
 map<string,int> dp;
-const int INF=987654321;
-string st1,res_str;
+const int INF=9999999999;
+string st1,min_str;
 map<string,string> mp1;
 map<char,int> mp2;
 vector<pair<int,string>> stack_;
@@ -47,32 +47,37 @@ int cal_(string c){
     for(int i=0;i<c.length();i++){
         res=res*10+mp2[c[i]];
     }
-    cout << res << endl;
+    //cout << "cal :: "<<res << endl;
+    return res;
 }
 int make_(string str_){
     if(dp[str_]) return dp[str_];
-    cout << str_ << endl;
+    //cout << str_ << endl;
     pt=0; int result =0; st1 = str_;
     int res = INF;
     while(pt<st1.length()){
         result += val_(pt);
         pt++;
+
     }
     if(result < 0) result = INF;
     dp[str_]=result;
     if(result == n){
-        min_=min(min_,cal_(str_));
+        if(min_>cal_(str_)){
+            min_=cal_(str_);
+            min_str = str_;
+        }
+        //cout << "min_ :: "<<min_ << endl;
     }
-    if(result>=n) return min_; // ㅇㅐ매함
-    string new_;
+    if(result>=n) return INF;
     // 1. str_()
-    res = min(res,make_(str_ +"()"));
-    res = min(res,make_(str_ +"{}"));
-    res = min(res,make_(str_ +"[]"));
+    make_(str_ +"()");
+    make_(str_ +"{}");
+    make_(str_ +"[]");
     // 2. (str)
-    res = min(res,make_("("+ str_ +")"));
-    res = min(res,make_("{"+ str_ +"}"));
-    res = min(res,make_("[" +str_ +"]"));
+    make_("("+ str_ +")");
+    make_("{"+ str_ +"}");
+    make_("[" +str_ +"]");
     return res;
 }
 int main(){
@@ -80,14 +85,8 @@ int main(){
     mp2['(']=1;mp2[')']=2;mp2['{']=3;mp2['}']=4;mp2['[']=5;mp2[']']=6;
     min_ = INF;
     cin >> n;
-    // pt=0;
-    // int result =0;
-    // while(pt<st1.length()){
-    //     result += val_(pt);
-    //     pt++;
-    // }
-    //cout << result <<endl;
 
-    cout << make_("");
+    make_("");
+    cout << min_str;
     return 0;
 }
