@@ -1,19 +1,27 @@
 #include <bits/stdc++.h>
+#define ll long long
 using namespace std;
 
-int m_sum[200010]; // 구간합 정보
+ll m_sum[200010]; // 구간합 정보
 int cx[200010]; // 각 나무의 좌표
-int INF = 1000000007;
+ll INF = 1000000007;
 int n;
 int get_sum(int idx){
     int n_idx = idx;
     int res=0;
-
     while(n_idx>0){
         res = res + m_sum[n_idx];
         n_idx = n_idx - (n_idx&-n_idx);
     }
-    //cout << "res : "<< res << ","<<idx << "/ ";
+    return res;
+}
+int get_cost(int idx){
+    int n_idx = idx;
+    int res=0;
+
+   for(int j=1;j<idx;j++){
+        res+=abs(get_sum(idx)-get_sum(j));
+   }
     return res;
 }
 void init(){
@@ -26,11 +34,6 @@ void init(){
         cx[i]=curr-prev;
         prev=curr;
     }
-    cout << "!! \n";
-    for(int i=1;i<=n;i++){
-        cout << cx[i] << ",";
-    }
-    cout << endl;
     for(int i=1;i<=n;i++){
         int idx=i;
         while(idx<=n){
@@ -38,47 +41,14 @@ void init(){
             idx = idx + (idx&-idx);
         }
     }
-    for(int i=1;i<=n;i++){
-        cout << get_sum(i) <<",";
-    }
-    cout << endl;
 }
 
-int get_cost(int idx){
-    int n_idx = idx;
-    int res=0;
-
-   for(int j=1;j<idx;j++){
-        res+=abs(get_sum(idx)-get_sum(j));
-        //cout <<res << endl;
-   }
-    return res;
-}
 int main(){
     init();
-    //cout <<endl<< get_cost(4);
-    int result=1;
+    ll result=1;
     for(int i=2;i<=n;i++){
-        // 곱하기 구간
-        int a = get_cost(i)%INF;
-        int m_res=0;
-        for(int i=0;i<result;i++){
-            m_res+=a;
-            if(m_res>=INF){
-                m_res%=INF;
-            }           
-        }
-        result = m_res;
-        //result=result*(get_cost(i)%INF);
-        //cout << result << endl;
+        result=result*(get_cost(i)%INF);
+        result%=INF;
     }
     cout << result%INF << endl;
 }
-/*
-5
-3
-4
-5
-6
-7
-*/
