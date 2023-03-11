@@ -13,7 +13,7 @@ int get_sum(int idx){
         res = res + m_sum[n_idx];
         n_idx = n_idx - (n_idx&-n_idx);
     }
-    cout << "res : "<< res << ","<<idx << "/ ";
+    //cout << "res : "<< res << ","<<idx << "/ ";
     return res;
 }
 void init(){
@@ -50,7 +50,7 @@ int get_cost(int idx){
 
    for(int j=1;j<idx;j++){
         res+=abs(get_sum(idx)-get_sum(j));
-        cout <<res << endl;
+        //cout <<res << endl;
    }
     return res;
 }
@@ -59,7 +59,18 @@ int main(){
     //cout <<endl<< get_cost(4);
     int result=1;
     for(int i=2;i<=n;i++){
-        result*=(get_cost(i)%INF);
+        // 곱하기 구간
+        int a = get_cost(i)%INF;
+        int m_res=0;
+        for(int i=0;i<result;i++){
+            m_res+=a;
+            if(m_res>=INF){
+                m_res%=INF;
+            }           
+        }
+        result = m_res;
+        //result=result*(get_cost(i)%INF);
+        //cout << result << endl;
     }
     cout << result%INF << endl;
 }
