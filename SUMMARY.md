@@ -36,6 +36,7 @@
 * [22. \[최단거리\] 다익스트라](undefined/22..md)
 * [23. \[최단거리\] 플로이드 워셜](undefined/23..md)
 * [24. \[최단거리\] 벨만포드](undefined/24..md)
+* [25. 문제 풀이 패턴 , 적용](undefined/25..md)
 * [999.기타](undefined/999.기타.md)
 
 ## 풀이
@@ -144,3 +145,4 @@
   * [17623(괄호)](undefined-1/8/17623.md)
   * [17297(Messi Gimossi)](undefined-1/8/17297-messi-gimossi.md)
   * [1280(나무)](undefined-1/8/1280.md)
+  * [3653\_1(영화수집)](undefined-1/8/3653\_1.md)
