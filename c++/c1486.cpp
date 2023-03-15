@@ -27,20 +27,23 @@ int go(int y1_,int x1_,int ti_,int hi_){
     res = hi_;
     for(int i=0;i<4;i++){
         int ny = y1_ + dy[i]; int nx = x1_ + dx[i]; int val=0;
-        if(ny < 0 || ny >= m || nx < 0 || nx >= n) continue;
+        if(ny < 0 || ny >= n || nx < 0 || nx >= m) continue;
         if(mp[ny][nx]>hi_){
             val = pow(mp[ny][nx]-hi_,2);
         }
         else{ val = 1; }
-        
-        if(abs(mp[ny][nx]-hi_)>t || ti_+val > d) {cout << val << " ";continue;}
+        if(abs(mp[ny][nx]-hi_)>t || ti_+val > d) {continue;}
         res=max(res,go(ny,nx,ti_+val,mp[ny][nx]));
     }
     return res;
 }
 int main(){
     init();
-    cout << go(0,0,0,mp[0][0]) << endl;
+    go(0,0,0,mp[0][0]);
+    int res=0;
+    for(int i=1;i<=d;i++){
+        if(dp[0][0][i]!=-1 ) {res=max(res,dp[0][0][i]); }
+    }
+    cout << res << endl;
     return 0;
 }
-//N과 M은 25보다 작거나 같은 자연수이다. 둘째 줄부터 N개의 줄에 지도가 주어진다. T는 52보다 작거나 같은 자연수이고, D는 1,000,000보다 작거나 같은 자연수이다.
