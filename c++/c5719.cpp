@@ -17,7 +17,7 @@ bool init(){
         mp1[u][v]=p;
     }
     return true;
-}
+} 
 void make_mp(){
     queue <int> q;
     fill(res,res+510,INF);
