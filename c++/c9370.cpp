@@ -4,6 +4,7 @@ using namespace std;
 int n,m,t,s,g,h,x[100],mp1[2010][2010],res_[2010];
 vector<pair<int,int>> mp2[2010];
 const int INF = 987654321;
+queue<int> res_q;
 void init(){
     int a,b,d;
     cin >> n >> m >> t;
@@ -16,7 +17,7 @@ void init(){
         mp2[a].push_back({b,d});mp2[b].push_back({a,d});
     }
     for(int i=0;i<t;i++){
-        cin >> x[t];
+        cin >> x[i] ;
     }
 }
 void make_mp(){
@@ -39,7 +40,9 @@ void reverse_make_mp(int end_){
     while(!q1.empty()){
         int here=q1.front().first;int res_m=q1.front().second; q1.pop();
         if(here == s && res_m==1 ){
-            cout << "!! => " << end_ <<endl;
+            
+            res_q.push(end_);
+            return;
         }
         for(pair<int,int> el : mp2[here]){
             
@@ -54,9 +57,15 @@ void reverse_make_mp(int end_){
 int main(){
     init();
     make_mp();
-    for(int i=1;i<=n;i++){
-        cout << res_[i] <<" ";
+    // for(int i=1;i<=n;i++){
+    //     cout << res_[i] <<" ";
+    // }
+    for(int i=0;i<t;i++){
+        reverse_make_mp(x[i]);
     }
-    reverse_make_mp(6);
+    while(!res_q.empty()){
+        cout << res_q.front() << " ";
+        res_q.pop();
+    }
     return 0;
 }
