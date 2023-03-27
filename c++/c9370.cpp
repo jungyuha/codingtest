@@ -34,7 +34,22 @@ void make_mp(){
     }
 }
 void reverse_make_mp(int end_){
-
+    queue<pair<int,int>> q1;
+    q1.push({end_,0});
+    while(!q1.empty()){
+        int here=q1.front().first;int res_m=q1.front().second; q1.pop();
+        if(here == s && res_m==1 ){
+            cout << "!! => " << end_ <<endl;
+        }
+        for(pair<int,int> el : mp2[here]){
+            
+            int to = el.first; int here_to_dist=el.second;
+            if(res_[to] == res_[here]-here_to_dist){
+                if((to==g && here==h)||(to==h && here==g)){ res_m = 1; }
+                q1.push({to,res_m});
+            }
+        }
+    } 
 }
 int main(){
     init();
@@ -42,5 +57,6 @@ int main(){
     for(int i=1;i<=n;i++){
         cout << res_[i] <<" ";
     }
+    reverse_make_mp(6);
     return 0;
 }
