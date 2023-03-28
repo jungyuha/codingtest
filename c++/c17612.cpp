@@ -17,7 +17,7 @@ struct comp{
 };
 bool comp2 (Data & a , Data & b){
     if(a.end_time == b.end_time){
-        return a.d_num < b.d_num;
+        return a.d_num > b.d_num;
     }
     return a.end_time < b.end_time;
 };
@@ -39,14 +39,6 @@ void init(){
 }
 int main(){
     init();
-    
-    // dataArr[0].end_time=dataArr[0].time;
-    // dataArr[1].end_time=dataArr[1].time;
-    // dataArr[2].end_time=dataArr[2].time;
-    // q1.push(dataArr[0]);
-    // q1.push(dataArr[1]);
-    // q1.push(dataArr[2]);
-
     int rnk=0;
     for (int i = 0; i < n; i++)
     {
@@ -54,9 +46,9 @@ int main(){
         cout << s_num <<"!!"<<endl;
         int s_time = q1.top().end_time;
         if(s_time > 0) {
-            rnk++;
-            cout<<"rnk : "<<rnk <<","<< q1.top().end_time << "," << q1.top().d_num << "," << q1.top().seq << endl;
-            res = res + rnk*q1.top().seq;
+            //cout<<"rnk : "<<rnk <<","<< q1.top().end_time << "," << q1.top().d_num << "," << q1.top().seq << endl;
+            v.push_back(q1.top());
+            //res = res + rnk*q1.top().seq;
         }
         q1.pop();
         dataArr[i].d_num=s_num;
@@ -71,7 +63,7 @@ int main(){
     sort(v.begin(),v.end(),comp2);
     for(Data el : v){
         rnk++;
-        cout<<"? : "<<rnk <<","<< el.end_time << "," << el.d_num << "," << el.seq << endl;
+        //cout<<"? : "<<rnk <<","<< el.end_time << "," << el.d_num << "," << el.seq << endl;
         res = res + rnk*el.seq;
     }
     cout << res ;
