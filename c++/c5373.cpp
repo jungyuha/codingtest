@@ -4,11 +4,19 @@ using namespace std;
 int cnt,mp[6][3][3];
 int num[6][12]={
     {25,26,27,37,40,43,30,29,28,54,51,48},
-    {19,20,21,39,42,45,36,35,34,52,49,46},
-    {10,11,12,37,40,43,3,2,1,48,47,46},
-    {16,17,18,45,44,43,30,29,28,54,53,52},
+    {21,20,19,46,49,52,34,35,36,45,42,39},
+    {10,11,12,39,38,37,3,2,1,46,47,48},
+    {7,8,9,43,44,45,18,17,16,54,53,52},
     {27,24,21,12,15,18,36,33,30,9,6,3},
     {19,22,25,1,4,7,28,31,34,16,13,10}
+    };
+int num[6][8]={
+    {1,2,3,6,9,8,7,4}, 
+    {12,11,10,13,16,17,18,15},
+    {19,20,21,24,27,26,25,22},
+    {34,35,36,33,30,29,28,31},
+    {1,2,3,6,9,8,7,4},
+    {1,2,3,6,9,8,7,4}
     };
 int color_val[55];
 map<char,int> ss;
@@ -46,7 +54,7 @@ void rotate_(int front,char rl){
     else if(rl =='-'){
         ll = 9;
     }
-    cout << "before :::"<<front<<"\n";
+    //cout << "before :::"<<front<<"\n";
     vector<pair<int,int>> temp;
     for(int i=0;i<12;i++){
         int next_idx = (i+ll)%12;
@@ -54,13 +62,17 @@ void rotate_(int front,char rl){
     }
     for(pair<int,int> el : temp){
         int a = el.first; int b = el.second;
-        cout <<"("<< a <<","<<b<<") ";
+        //cout <<"("<< a <<","<<b<<") ";
         color[a]=b;
     }
-    cout << "after ::: \n";
-    for(int el:num[front]){
-        cout <<"("<< el <<","<<color[el]<<") ";
+    // cout << "after ::: \n";
+    // for(int el:num[front]){
+    //     cout <<"("<< el <<","<<color[el]<<") ";
+    // }
+    for(int i=19;i<=27;i++){
+        cout <<"("<< i <<","<<color[i]<<") ";
     }
+    cout << endl;
 }
 int main() {
     init();
