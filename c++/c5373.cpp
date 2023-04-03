@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int cnt,mp[6][3][3];
+int R;
 int num[6][12]={
     {25,26,27,37,40,43,30,29,28,54,51,48},
     {21,20,19,46,49,52,34,35,36,45,42,39},
@@ -21,6 +21,7 @@ int num2[6][8]={
 int color[55];
 map<char,int> ss;
 map<int,char> color_val;
+vector<char> result;
 void init(){
     ss['F']=0;
     ss['B']=1;
@@ -62,56 +63,40 @@ void rotate_(int front,char rl){
     }
     for(int i=0;i<8;i++){
         int next_idx = (i+ll2)%8;
-        cout <<"!("<< num2[front][i] <<","<<color[num2[front][i]]<<","<<next_idx<<") ";
         temp2.push_back({num2[front][i],color[num2[front][next_idx]]});
     }
-    cout << endl;
     for(pair<int,int> el : temp){
         int a = el.first; int b = el.second;
-        //cout <<"("<< a <<","<<b<<") ";
         color[a]=b;
     }
     int k=0;
     for(pair<int,int> el : temp2){
         int a = el.first; int b = el.second;
-        //cout <<"("<< a <<","<<b<<") ";
         color[a]=b;
     }
-    cout << front << "after ::: \n";
-    for(int el:num2[front]){
-        cout <<"("<< el <<","<<color[el]<<") ";
-    }
-    cout << endl;
-    for(int i=19;i<=27;i++){
-        cout <<"("<< i <<","<<color[i]<<") ";
-    }
-    cout << endl;
 }
 int main() {
-    init();
-    // for (auto mp : ss) {
-    //     cout << mp.first <<":";
-    //     cout << mp.second << endl;
-    //     for(int el : num[mp.second]){
-    //         cout << el <<" ";
-    //     }
-    //     cout << endl;
-    // }
-    cin >> cnt;
-    char c1[2];
-    for(int i=0;i<cnt;i++){
-        scanf("%s",&c1);
-        rotate_(ss[c1[0]],c1[1]);
-    }
-    cout << "result :: "<< endl;
-    for(int i=19;i<=27;i++){
-        cout <<"("<< i <<","<<color[i]<<") ";
+    cin >> R ;
+    while(R){
+        init();
+        int cnt;
+        cin >> cnt;
+        char c1[2],a_,b_;
+        for(int i=0;i<cnt;i++){
+            //scanf("%s",&c1);
+            cin >> a_ >> b_;
+            rotate_(ss[a_],b_);
+        }
+        for(int i=19;i<=27;i++){
+            result.push_back(color_val[color[i]]);
+        }
+        R--;
     }
     int k=1;
-    for(int i=19;i<=27;i++){
-        cout <<color_val[color[i]];
+    for(char el : result){
+        cout << el;
         if(k%3==0) cout << endl;
         k++;
-    }
+        }
     return 0;
 }
