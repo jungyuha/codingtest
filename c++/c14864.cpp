@@ -16,14 +16,24 @@ void init(){
         mp1[a-1]++;
     }
 }
+bool check(){
+    bool res_2 = true;
+    for(pair<int,int> el : vc1){
+        int a = el.first-1; int b = el.second-1;
+        if(res_[a] < res_[b]){
+            res_2 = false;
+            break;
+        }
+    }
+    return res_2;
+}
 int main(){
     init();
-    cout <<  "111 \n";
     for(int i=0;i<n;i++){
         //mp1[i]
         int k =0,j=0;
         while(k<10){
-            cout <<  "k :: "<<k<<",j ::"<<j<<",mp1[j] ::"<<mp1[j]<<",mp2[j] ::"<<mp2[j]<<endl;
+            //cout <<  "k :: "<<k<<",j ::"<<j<<",mp1[j] ::"<<mp1[j]<<",mp2[j] ::"<<mp2[j]<<endl;
             if(mp2[j]==-1) {j++; continue;}
             if(k==mp1[i]){
                 res_[i]=mp2[j];
@@ -32,12 +42,17 @@ int main(){
             }
             j++;k++;
         }  
-        cout <<  "222 \n";
     }
     
-    for(int i=0;i<n;i++){
-        cout << res_[i] << " ";
+    if(check()){
+        for(int i=0;i<n;i++){
+            cout << res_[i] << " ";
+        }
+        cout << endl;
     }
-    cout << endl;
+    else{
+        cout << "-1";
+    }
+
     return 0;
 }
