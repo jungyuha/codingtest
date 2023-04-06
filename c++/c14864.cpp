@@ -3,7 +3,6 @@ using namespace std;
 
 int n,m,mp1[5010],mp2[5010],res_[5010];
 vector<pair<int,int>> vc1;
-queue<int> q1;
 void init(){
     cin >> n >> m;
     for(int i=0;i<n;i++){
@@ -30,9 +29,8 @@ bool check(){
 int main(){
     init();
     for(int i=0;i<n;i++){
-        //mp1[i]
         int k =0,j=0;
-        while(k<10){
+        while(1){
             //cout <<  "k :: "<<k<<",j ::"<<j<<",mp1[j] ::"<<mp1[j]<<",mp2[j] ::"<<mp2[j]<<endl;
             if(mp2[j]==-1) {j++; continue;}
             if(k==mp1[i]){
