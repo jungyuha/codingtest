@@ -3,13 +3,13 @@
 using namespace std;
 
 const int INF = 987654321;
-int n,m,h,val_[1010][1010];
+int n,m,h;
 vector<pair<int,int>> hor[1010],ver[1010]; // 구멍 정보
-vector<tuple<int,int,int>> adj[1010][1010];
-priority_queue <pair<int,int>> q1; // 높이가 바뀐 칸 (행 , 열) 
+int adj[1010][1010][4];
+int val_[1010][1010];
+queue <pair<int,int>> q1; // 높이가 바뀐 칸 (행 , 열) 
 void init(){
     cin >> n >> m >> h; //2 3 5
-   //fill(val_,val_+1010*1010,h);
 
    int a;
     for(int i=0;i<=n;i++){ // 가로줄
@@ -18,7 +18,11 @@ void init(){
             if(a==-1) continue;
             hor[i].push_back({j,a});
             q1.push({i,j}); // 행 , 열
-            if(i-1 >= 0) q1.push({i-1,j}); // 행 , 열
+            adj[i][j][0]=a;
+            if(i-1 >= 0) { 
+                q1.push({i-1,j}); // 행 , 열
+                adj[i-1][j][2]=a;
+            }
         }
     }
     for(int i=0;i<n;i++){ // 가로칸
@@ -27,7 +31,13 @@ void init(){
             if(a==-1) continue;
             ver[j].push_back({i,a});
             q1.push({i,j});
-            if(j-1 >= 0) q1.push({i,j-1});
+            adj[i][j][3]=a;
+            if(j-1 >= 0) { q1.push({i,j-1}); adj[i][j-1][1]=a;}
+        }
+    }
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            val_[i][j]=h;
         }
     }
 
@@ -43,8 +53,20 @@ void init(){
             cout <<"    "<<i<<"번째 세로줄 : "<< el.first << "행 => " << el.second <<endl;
         }        
     }
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            cout <<i<<"행 "<< j << "열 => " << adj[i][j][0] << ", " <<adj[i][j][1] << ", " <<adj[i][j][2] << ", " <<adj[i][j][3]<< endl;
+        }
+    }
 }
 int main(){
     init();
-    
+    while(!q1.empty()){
+        int cy = q1.front().first; int cx = q1.front().second;
+        q1.pop();
+        for(int k=0;k<4;k++){
+            int d = adj[cy][cx][k];
+            if(d == 0) continue;
+        }
+    }
 }
