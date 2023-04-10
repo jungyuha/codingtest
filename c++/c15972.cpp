@@ -17,10 +17,10 @@ void init(){
             cin >> a;
             if(a==-1) continue;
             hor[i].push_back({j,a});
-            q1.push({i,j}); // 행 , 열
+            //q1.push({i,j}); // 행 , 열
             adj[i][j][0]=a;
             if(i-1 >= 0) { 
-                q1.push({i-1,j}); // 행 , 열
+                //q1.push({i-1,j}); // 행 , 열
                 adj[i-1][j][2]=a;
             }
         }
@@ -30,43 +30,79 @@ void init(){
             cin >> a;
             if(a==-1) continue;
             ver[j].push_back({i,a});
-            q1.push({i,j});
+            //q1.push({i,j});
             adj[i][j][3]=a;
-            if(j-1 >= 0) { q1.push({i,j-1}); adj[i][j-1][1]=a;}
+            if(j-1 >= 0) { 
+                //q1.push({i,j-1});
+                adj[i][j-1][1]=a;
+            }
         }
     }
     for(int i=0;i<n;i++){
         for(int j=0;j<m;j++){
+            q1.push({i,j});
             val_[i][j]=h;
         }
     }
 
-    for(int i=0;i<=n;i++){ // 가로줄
-        cout <<"----------가로줄 정보---------- :: "<< i << endl;
-        for(pair<int,int> el : hor[i]){
-            cout <<"    "<<i<<"번째 가로줄 : "<< el.first << "열 => " << el.second <<endl;
-        }
-    }
-    for(int i=0;i<=m;i++){  // 세로줄
-        cout <<"----------세로줄 정보---------- :: "<< i << endl;
-        for(pair<int,int> el : ver[i]){
-            cout <<"    "<<i<<"번째 세로줄 : "<< el.first << "행 => " << el.second <<endl;
-        }        
-    }
+    // for(int i=0;i<=n;i++){ // 가로줄
+    //     cout <<"----------가로줄 정보---------- :: "<< i << endl;
+    //     for(pair<int,int> el : hor[i]){
+    //         cout <<"    "<<i<<"번째 가로줄 : "<< el.first << "열 => " << el.second <<endl;
+    //     }
+    // }
+    // for(int i=0;i<=m;i++){  // 세로줄
+    //     cout <<"----------세로줄 정보---------- :: "<< i << endl;
+    //     for(pair<int,int> el : ver[i]){
+    //         cout <<"    "<<i<<"번째 세로줄 : "<< el.first << "행 => " << el.second <<endl;
+    //     }        
+    // }
     for(int i=0;i<n;i++){
         for(int j=0;j<m;j++){
             cout <<i<<"행 "<< j << "열 => " << adj[i][j][0] << ", " <<adj[i][j][1] << ", " <<adj[i][j][2] << ", " <<adj[i][j][3]<< endl;
         }
     }
 }
+bool check(int cy , int cx , int k , int hole_){
+    int ny =0 , nx =0 , min_val=987654321 , max_val=-987654321;
+    bool end_yn=false;
+    if(k==0){
+        ny = cy-1; nx = cx;
+        if(ny<0){ end_yn = true; }
+    }
+    else if(k==1){
+        ny = cy; nx = cx+1;
+        if(nx>=m){ end_yn = true; }
+    }
+    else if(k==2){
+        ny = cy+1; nx = cx;
+        if(ny>=n){ end_yn = true; }
+    }
+    else if(k==3){
+        ny = cy; nx = cx-1;
+        if(nx<0){ end_yn = true; }
+    }
+    if(end_yn) { min_val = (-1)*val_[cy][cx]; }
+    else{ min_val=min(val_[ny][nx],val_[cy][cx]); }
+    max_val=max(val_[ny][nx],val_[cy][cx]);
+    cout <<" ::: hole_ : "<<hole_<<", val_[cy][cx] : "<< val_[cy][cx] << ", val_[ny][nx] : "<< val_[ny][nx] <<"     ";
+    if(min_val < hole_ && max_val > hole_) { return true; }
+    else { return false; }
+}
 int main(){
     init();
     while(!q1.empty()){
         int cy = q1.front().first; int cx = q1.front().second;
+        cout <<"q1: "<<cy<<"행 "<< cx  << "열 "<<endl;
         q1.pop();
         for(int k=0;k<4;k++){
             int d = adj[cy][cx][k];
             if(d == 0) continue;
+            cout <<"    "<<k<<"번째 / d : "<< adj[cy][cx][k];
+            if(check(cy,cx,k,d)){cout << " => O" << endl ;}
+            else{
+                cout << " => X" << endl ;
+            }
         }
     }
 }
