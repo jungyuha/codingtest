@@ -2,7 +2,7 @@
 using namespace std;
 
 const int INF=987654321;
-int mp[16][16],dp[16][16];
+int mp[16][(1<<16)],dp[16][16];
 int n;
 int go(int here,int vis){
     if(vis==(1<<n)-1){

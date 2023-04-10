@@ -3,7 +3,6 @@ using namespace std;
 typedef long long ll;
 int t,p,n,mp[10000][4],res[10000];
 int main() {
-
     mp[0][1] =1; mp[0][2] =1; mp[0][3] =1;
     for(int i=1;i<=10000;i++){
         for(int j=1;j<=3;j++){
@@ -14,11 +13,9 @@ int main() {
                     if(i==j) jj=j+1;
                 }
                 // (1)
-  
             }
         }
     }
-
     cin >> t;
     while(t){
         cin >> p;

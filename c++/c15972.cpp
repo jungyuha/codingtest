@@ -41,7 +41,7 @@ void init(){
     for(int i=0;i<n;i++){
         for(int j=0;j<m;j++){
             q1.push({i,j});
-            val_[i][j]=h;
+            val_[i][j]=h-1;
         }
     }
 
@@ -64,7 +64,7 @@ void init(){
     }
 }
 bool check(int cy , int cx , int k , int hole_){
-    int ny =0 , nx =0 , min_val=987654321 , max_val=-987654321;
+    int ny =0 , nx =0 ,res=-1;int min_val=987654321 , max_val=-987654321;
     bool end_yn=false;
     if(k==0){
         ny = cy-1; nx = cx;
@@ -82,11 +82,17 @@ bool check(int cy , int cx , int k , int hole_){
         ny = cy; nx = cx-1;
         if(nx<0){ end_yn = true; }
     }
-    if(end_yn) { min_val = (-1)*val_[cy][cx]; }
+    if(end_yn) { min_val = 0; }
     else{ min_val=min(val_[ny][nx],val_[cy][cx]); }
     max_val=max(val_[ny][nx],val_[cy][cx]);
-    cout <<" ::: hole_ : "<<hole_<<", val_[cy][cx] : "<< val_[cy][cx] << ", val_[ny][nx] : "<< val_[ny][nx] <<"     ";
-    if(min_val < hole_ && max_val > hole_) { return true; }
+    cout <<" ::: hole_ : "<<hole_<<", val_[cy][cx] : "<< val_[cy][cx] << ", val_[ny][nx] : "<< val_[ny][nx] ;
+    if(min_val < hole_ && max_val > hole_) { 
+        int res = min_val+max_val-hole_;
+        cout <<", res : "<<res<<"     ";
+        if(end_yn) {val_[cy][cx] = hole_; cout << "res1  :: "<<val_[cy][cx] ; q1.push({cy,cx});} // val_[cy][cx] = hole_; 
+        else if(val_[cy][cx] >= val_[ny][nx]) { val_[cy][cx] = max(res,hole_); val_[ny][nx] = min(res,hole_); q1.push({cy,cx}); q1.push({ny,nx});cout << "res2  ::"<<max(res,hole_)<<","<<min(res,hole_);}
+        else if(val_[cy][cx] < val_[ny][nx]) { val_[cy][cx] = min(res,hole_); val_[ny][nx] = max(res,hole_); q1.push({cy,cx}); q1.push({ny,nx});cout << "res3  ::"<<max(res,hole_)<<","<<min(res,hole_);}
+         return true; }
     else { return false; }
 }
 int main(){
@@ -99,10 +105,14 @@ int main(){
             int d = adj[cy][cx][k];
             if(d == 0) continue;
             cout <<"    "<<k<<"번째 / d : "<< adj[cy][cx][k];
-            if(check(cy,cx,k,d)){cout << " => O" << endl ;}
-            else{
-                cout << " => X" << endl ;
-            }
+            if(check(cy,cx,k,d)){cout << " => O" << endl ; }
+            else{ cout << " => X" << endl ; }
         }
+    }
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            cout <<i<<"행 "<< j << "열 => " << val_[i][j] << ", ";
+        }
+        cout <<endl;
     }
 }

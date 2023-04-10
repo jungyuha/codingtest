@@ -18,7 +18,6 @@ int main(){
 
     for(pair<int,int> el : lst){
         //1. 각 경찰차로부터의 거리 계산
-        //cp[0].first=1;cp[0].second=1;
         int d1 = abs(el.first-cp[0].first)+abs(el.second-cp[0].second);
         int d2 = abs(el.first-cp[1].first)+abs(el.second-cp[1].second);
 
