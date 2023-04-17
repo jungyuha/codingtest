@@ -57,7 +57,7 @@
   * [3986(좋은 단어)](undefined-1/1/3986.md)
   * [1629(곱셈)](undefined-1/1/1629.md)
   * [4375(1)](undefined-1/1/4375-1.md)
-* [2주차(DFS,BFS그래프)](undefined-1/2-dfs-bfs/README.md)
+* [2주차(DFS,BFS그래프)](undefined-1/2-dfs-bfs.md)
   * [2178()](undefined-1/2-dfs-bfs/2178.md)
   * [1012()](undefined-1/2-dfs-bfs/1012.md)
   * [2468()](undefined-1/2-dfs-bfs/2468.md)
