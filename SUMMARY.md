@@ -40,7 +40,7 @@
 * [26. DP](undefined/26.-dp.md)
 * [999.기타](undefined/999.기타.md)
 
-## 풀이
+## 문제
 
 * [1주차(문자 배열)](undefined-1/1/README.md)
   * [2309(아홉 난장이)](undefined-1/1/2309.md)
@@ -195,3 +195,8 @@
   * [15972(물탱크)](undefined-1/8/15972.md)
   * [17616(등수 찾기)](undefined-1/8/17616.md)
   * [17611(직각다각형)](undefined-1/8/17611.md)
+
+## 해답
+
+* [BFS](undefined-2/bfs/README.md)
+  * [개념](undefined-2/bfs/undefined.md)
