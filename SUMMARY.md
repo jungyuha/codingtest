@@ -200,5 +200,13 @@
 
 ## 해답
 
-* [BFS](undefined-2/bfs/README.md)
-  * [개념](undefined-2/bfs/undefined.md)
+* [Page](undefined-2/page.md)
+* [문자 배열 솔루션](undefined-2/undefined.md)
+* [DFS,BFS 솔루션](undefined-2/dfs-bfs/README.md)
+  * [BFS](undefined-2/dfs-bfs/bfs.md)
+* [완전탐색,백트래킹 솔루션](undefined-2/undefined-1.md)
+* [비트마스킹 솔루션](undefined-2/undefined-2.md)
+* [\[5\] 그리디,라인스위핑,투포인터 솔루션](undefined-2/5.md)
+* [\[6\] 이분탐색,LIS 솔루션](undefined-2/6-lis.md)
+* [\[7\] DP 솔루션](undefined-2/7-dp.md)
+* [\[8\] 최단거리 솔루션](undefined-2/8.md)
