@@ -200,12 +200,14 @@
 
 ## 해답
 
-* [날짜](undefined-2/undefined.md)
+* [날짜](undefined-2/undefined/README.md)
+  * [23/09/02](undefined-2/undefined/23-09-02.md)
+  * [23/09/03](undefined-2/undefined/23-09-03.md)
 * [\[1\] 문자열,구간합 솔루션](undefined-2/1.md)
 * [\[2\] DFS,BFS 솔루션](undefined-2/2-dfs-bfs/README.md)
   * [BFS](undefined-2/2-dfs-bfs/bfs.md)
 * [\[3\] 완전탐색,백트래킹 솔루션](undefined-2/3.md)
-* [비트마스킹 솔루션](undefined-2/undefined-1.md)
+* [\[4\] 비트마스킹 솔루션](undefined-2/4.md)
 * [\[5\] 그리디,라인스위핑,투포인터 솔루션](undefined-2/5.md)
 * [\[6\] 이분탐색,LIS 솔루션](undefined-2/6-lis.md)
 * [\[7\] DP 솔루션](undefined-2/7-dp.md)
