@@ -30,4 +30,9 @@
 
 #### (4) _2 - K : 3474_ [교수가 된 현우](https://www.acmicpc.net/problem/3474)
 
+<mark style="background-color:green;">**문제 분류 : 큰 숫자를 구성하는 요소들의 개수 찾기(약간 왼쪽 냅색 느낌 ? 근데 이제 더하기가 아닌 곱하기)**</mark>
+
+* 왼쪽부터 하나씩 2의 배수로 탐색하면 시간복잡도 10억
+* ![](<../../.gitbook/assets/image (42).png>)
+
 {% embed url="http://boj.kr/89fea6fe8f9241b1980f0fac22342679" %}
