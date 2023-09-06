@@ -26,4 +26,19 @@
 
 #### (4) _7 - K : 1513_ 경로 찾기
 
+* <mark style="background-color:green;">**문제 분류 : DP**</mark>
+  * <mark style="background-color:green;">**상태값 : X , Y , C(오락실 방문 횟수) , prev( 직전에 방문한 오락실 번호 )**</mark>
+
 {% embed url="http://boj.kr/60dbddfd09b34a019c1115999cf9eff1" %}
+
+* ![](<../.gitbook/assets/image (35).png>)
+* 표시할 수 있는 상태값 : X , Y , C(오락실 방문 횟수) , prev( 직전에 방문한 오락실 번호 )
+* dp는 -1로 초기화 (정답이 되지 않는 수)
+* 재귀 함수 오버플로우 처리 형태에는 2가지가 있음
+  * 함수 초입에 검사하기
+  * 함수 들어가기 전에 if문으로 검사하기
+* return 0; 은 해당 경우를 배제시킨다는 뜻
+
+#### (5) _7 - L : 1535 안녕_
+
+{% embed url="http://boj.kr/a2dad6c8b1a74752b1127f90f914c5ac" %}

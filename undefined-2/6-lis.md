@@ -12,7 +12,7 @@
 
 ![](<../.gitbook/assets/image (7).png>)
 
-#### _(6) 6 - J : 1561 놀이공원_&#x20;
+#### _(3) 6 - J : 1561 놀이공원_&#x20;
 
 {% embed url="http://boj.kr/c2fb354cd24049edb34fbd09a91a38d3" %}
 
@@ -30,4 +30,17 @@
 
 #### (4) _6 - K : 14003_ 가장 긴 증가하는 부분 수열 5
 
+* <mark style="background-color:green;">**문제 분류 : RIS + 역추적**</mark>
+
 {% embed url="http://boj.kr/b4a30d5a7f404a25bf3097a45808b5e2" %}
+
+* ![](<../.gitbook/assets/image (40).png>)
+* LIS&#x20;
+  * ![](<../.gitbook/assets/image (37).png>)
+  * ![](<../.gitbook/assets/image (38).png>)
+* 역추적 (스택사용)
+  * ![](<../.gitbook/assets/image (39).png>)
+
+#### (5) _6 - L : 2670_ 연속부분최대곱
+
+{% embed url="http://boj.kr/d34cb3945f0a46f9ae3ba22377cff4d7" %}

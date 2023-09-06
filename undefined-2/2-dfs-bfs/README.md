@@ -1,6 +1,6 @@
 # \[2] DFS,BFS 솔루션
 
-#### (1) 2-H:4659
+(1) 2-H:4659
 
 * 연속성 유무
   * cnt 활용
@@ -30,9 +30,13 @@
 
 #### (4) _2 - K : 3474_ [교수가 된 현우](https://www.acmicpc.net/problem/3474)
 
+{% embed url="http://boj.kr/89fea6fe8f9241b1980f0fac22342679" %}
+
 <mark style="background-color:green;">**문제 분류 : 큰 숫자를 구성하는 요소들의 개수 찾기(약간 왼쪽 냅색 느낌 ? 근데 이제 더하기가 아닌 곱하기)**</mark>
 
 * 왼쪽부터 하나씩 2의 배수로 탐색하면 시간복잡도 10억
 * ![](<../../.gitbook/assets/image (42).png>)
 
-{% embed url="http://boj.kr/89fea6fe8f9241b1980f0fac22342679" %}
+#### (5) _2 - L : 2852_ NBA 농구
+
+{% embed url="https://www.acmicpc.net/source/share/5d5e7e5459524080abec73ee77de2fbe" %}
