@@ -32,6 +32,7 @@
     * [1. 생성](undefined/21.-and/2/1..md)
     * [2. 업데이트](undefined/21.-and/2/2..md)
     * [3. 구간합 구하기](undefined/21.-and/2/3..md)
+    * [4. 2차원 펜윅트리](undefined/21.-and/2/4.-2.md)
     * [참고](undefined/21.-and/2/undefined.md)
 * [22. \[최단거리\] 다익스트라](undefined/22..md)
 * [23. \[최단거리\] 플로이드 워셜](undefined/23..md)

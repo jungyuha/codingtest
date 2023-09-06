@@ -4,13 +4,13 @@
 
 풀이 : 이분탐색
 
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (6) (1).png>)
 
 #### (2) 6-I:14627
 
 풀이 : 이분탐색
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (7) (1).png>)
 
 #### _(3) 6 - J : 1561 놀이공원_&#x20;
 
