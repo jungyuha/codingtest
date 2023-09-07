@@ -49,3 +49,7 @@
 #### _(6) 2 - M : 1436_ 영화감독 숌
 
 {% embed url="http://boj.kr/20f8f3ad94314cc8ab21a004bf75dbf6" %}
+
+* <mark style="background-color:green;">**문제 분류 :  무식하게 풀기**</mark>
+  * <mark style="background-color:green;">**666부터 시작하게 1개씩 더해본다.**</mark>
+* 어떻게 풀어야할까? 가 아니라 무식하게 먼저 풀 생각부터 해야한다.
