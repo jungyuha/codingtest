@@ -39,3 +39,11 @@ int main()
     printArray(array, 6); // so array evaluates to a pointer to the first element of the array here, no & needed
 }
 ```
+
+### (3) 2차원 배열 90도 회전하기 ( 오른쪽 방향 )
+
+<mark style="background-color:green;">**배열 회전**</mark>
+
+* <mark style="background-color:green;">**90도 회전 : a\[i]\[j] = a\[n-j-1]\[i]**</mark>
+  * 인덱스는 0부터 시작하고 , n은 변의 길이이다.
+  * ![](.gitbook/assets/BACE32B3-0FDE-4A80-A459-C235518C555F.jpeg)
