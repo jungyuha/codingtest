@@ -52,3 +52,9 @@
     *
 
         <figure><img src="../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
+
+
+
+#### _(7) 7 - M : 16235_ 나무 재테크
+
+{% embed url="http://boj.kr/6724b47bbb4244c7a74a38a5c7f2b70c" %}

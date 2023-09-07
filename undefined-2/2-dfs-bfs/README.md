@@ -40,3 +40,12 @@
 #### (5) _2 - L : 2852_ NBA 농구
 
 {% embed url="https://www.acmicpc.net/source/share/5d5e7e5459524080abec73ee77de2fbe" %}
+
+<mark style="background-color:green;">**문제 분류 : 단위 변환 + 숫자/문자 변환**</mark>
+
+* <mark style="background-color:green;">**prev**</mark> 활용
+* 숫자 단위 통일 (분 => 초)
+
+#### _(6) 2 - M : 1436_ 영화감독 숌
+
+{% embed url="http://boj.kr/20f8f3ad94314cc8ab21a004bf75dbf6" %}
