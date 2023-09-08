@@ -63,3 +63,7 @@
 
 * <mark style="background-color:green;">**한 칸에 나무 여러개 => 한 칸의 자료형이 vector가 됨 (나무를 오름차순 해야함)**</mark>
 * <mark style="background-color:green;">**temp 배열 사용 => 양분을 다음 계절에 넣기 위해**</mark>
+
+#### (8) _7 - N : 17136_ 색종이 붙이기
+
+{% embed url="http://boj.kr/ac40156090a44a3883d00e1da2250094" %}

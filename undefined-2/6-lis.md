@@ -72,3 +72,7 @@
 {% embed url="http://boj.kr/703ee460495f48309c0e24b4f4c86e30" %}
 
 * <mark style="background-color:green;">**문제 분류 :  LIS**</mark>
+
+#### (7) _6 - N : 14002_ 가장 긴 증가하는 부분 수열 4
+
+{% embed url="http://boj.kr/17f8476941034cfa9eb8d55b964690bb" %}

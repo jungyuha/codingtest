@@ -53,3 +53,7 @@
 * <mark style="background-color:green;">**문제 분류 :  무식하게 풀기**</mark>
   * <mark style="background-color:green;">**666부터 시작하게 1개씩 더해본다.**</mark>
 * 어떻게 풀어야할까? 가 아니라 무식하게 먼저 풀 생각부터 해야한다.
+
+#### (7) _2 - N : 9012_ 괄호
+
+{% embed url="http://boj.kr/fd0a8a36c94f49b59150c93831c29243" %}

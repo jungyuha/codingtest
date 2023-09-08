@@ -208,6 +208,7 @@
   * [23/09/05(K)](undefined-2/undefined/23-09-05-k.md)
   * [23/09/06(L)](undefined-2/undefined/23-09-06-l.md)
   * [23/09/07(M)](undefined-2/undefined/23-09-07-m.md)
+  * [23/09/08(N)](undefined-2/undefined/23-09-08-n.md)
 * [\[1\] 문자열,구간합 솔루션](undefined-2/1.md)
 * [\[2\] DFS,BFS 솔루션](undefined-2/2-dfs-bfs/README.md)
   * [BFS](undefined-2/2-dfs-bfs/bfs.md)
