@@ -1,6 +1,6 @@
 # \[2] DFS,BFS 솔루션
 
-(1) 2-H:4659
+#### (1) 2-H:4659
 
 * 연속성 유무
   * cnt 활용
@@ -57,3 +57,8 @@
 #### (7) _2 - N : 9012_ 괄호
 
 {% embed url="http://boj.kr/fd0a8a36c94f49b59150c93831c29243" %}
+
+* <mark style="background-color:green;">**문제 분류 :  스택(짝짓기,괄호,폭발..)**</mark>
+* 경우의 수
+  * ㅍ![](<../../.gitbook/assets/image (59).png>)
+  * ![](<../../.gitbook/assets/image (60).png>)
