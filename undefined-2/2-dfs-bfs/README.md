@@ -62,3 +62,7 @@
 * 경우의 수
   * ㅍ![](<../../.gitbook/assets/image (59).png>)
   * ![](<../../.gitbook/assets/image (60).png>)
+
+#### (8) 2-O:4949 균형잡힌 세상
+
+{% embed url="http://boj.kr/5802422930814efeb41969fdf2b6d4d2" %}
