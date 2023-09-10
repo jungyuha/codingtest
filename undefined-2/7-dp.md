@@ -95,3 +95,7 @@
         <figure><img src="../.gitbook/assets/image (81).png" alt="" width="375"><figcaption></figcaption></figure>
 
         </div>
+
+#### (P) 7-P:14867 물통
+
+{% embed url="http://boj.kr/01ca758c46154055ab85443720f133cf" %}

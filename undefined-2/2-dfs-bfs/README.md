@@ -70,3 +70,7 @@
 * <mark style="background-color:green;">**문제 분류 1 :  스택(짝짓기 문제)**</mark>
   * <mark style="background-color:green;">**테스트케이스마다 새로운 stack을 할당한다.**</mark>
 * <mark style="background-color:green;">**문제 분류 2 :  문자열**</mark>
+
+#### (P) 2-P:14502 연구소
+
+{% embed url="http://boj.kr/793d0205325c44949c3e504af42bcfdd" %}

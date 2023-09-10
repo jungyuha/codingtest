@@ -1,14 +1,22 @@
 # \[6] 이분탐색,LIS 솔루션
 
-#### (1) 6-H:2776
+#### (G) 6-G:1072 게임
 
-풀이 : 이분탐색
+{% embed url="http://boj.kr/2d466352283f4b9ba1e5e0c2864a8ed8" %}
+
+#### (H) 6-H:2776
+
+{% embed url="http://boj.kr/6a21a43f74594cf08963ad0de77ec89a" %}
+
+<mark style="background-color:green;">**풀이 : 이분탐색**</mark>
 
 ![](<../.gitbook/assets/image (6) (1) (1).png>)
 
-#### (2) 6-I:14627
+#### (I) 6-I:14627
 
-풀이 : 이분탐색
+{% embed url="http://boj.kr/1a34f4d0948243deac6d6915bcf1c8e0" %}
+
+<mark style="background-color:green;">**풀이 : 이분탐색**</mark>
 
 ![](<../.gitbook/assets/image (7) (1) (1).png>)
 
