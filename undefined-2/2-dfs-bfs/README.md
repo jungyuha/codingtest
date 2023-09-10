@@ -66,3 +66,7 @@
 #### (8) 2-O:4949 균형잡힌 세상
 
 {% embed url="http://boj.kr/5802422930814efeb41969fdf2b6d4d2" %}
+
+* <mark style="background-color:green;">**문제 분류 1 :  스택(짝짓기 문제)**</mark>
+  * <mark style="background-color:green;">**테스트케이스마다 새로운 stack을 할당한다.**</mark>
+* <mark style="background-color:green;">**문제 분류 2 :  문자열**</mark>

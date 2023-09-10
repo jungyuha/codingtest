@@ -77,7 +77,13 @@
 
 {% embed url="http://boj.kr/17f8476941034cfa9eb8d55b964690bb" %}
 
-#### (8) 6-O:2565 전깃줄
+* <mark style="background-color:green;">**문제 분류 1 : LIS trace ->Prev 배열 활용**</mark>
+  * ![](<../.gitbook/assets/image (70).png>)
 
-http://boj.kr/781fd29992c444638a46b118a95b81d9
+#### (6) 6-O:2565 전깃줄
 
+{% embed url="http://boj.kr/781fd29992c444638a46b118a95b81d9" %}
+
+* <mark style="background-color:green;">**문제 분류 1: LIS**</mark>
+  * <mark style="background-color:green;">**pair(쌍)으로 주어지는 데이터로 무언가를 할 때 둘 중에 하나를 잡아서 sort를 해본다.**</mark>
+    * ![](<../.gitbook/assets/image (83).png>)

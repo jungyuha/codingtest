@@ -68,6 +68,30 @@
 
 {% embed url="http://boj.kr/ac40156090a44a3883d00e1da2250094" %}
 
+* <mark style="background-color:green;">**문제 분류 1 : 휴리스틱 (큰색종이부터 고르기)**</mark>
+  * ![](<../.gitbook/assets/image (73).png>)
+* <mark style="background-color:green;">**문제 분류 2 : dfs 백트래킹 -> 경우의 수 가지치기**</mark>
+  * ![](<../.gitbook/assets/image (71).png>) <mark style="background-color:green;">**탐색하지 않아도 되는 부분은 탐색 X**</mark>
+  * <mark style="background-color:green;">**상태 :  X,Y,CNT(사용한 색종이의 수 )**</mark>
+    * ![](<../.gitbook/assets/image (72).png>)
+
 #### (9) 7-O:17837 새로운 게임 2
 
 {% embed url="http://boj.kr/bd7ad2c207324e6e90f28954e5a7b4c5" %}
+
+* <mark style="background-color:green;">**문제 분류 1: 구현**</mark>
+  * 한칸에 여러개 -> vector 사용
+  * 방향바꾸기
+    * ![](<../.gitbook/assets/image (79).png>)
+  * 말 움직이기
+    * \
+      ![](<../.gitbook/assets/image (80).png>)
+    * c부터 옮기기
+      * ![](<../.gitbook/assets/image (82).png>)
+    *   c 말찾기
+
+        <div align="left">
+
+        <figure><img src="../.gitbook/assets/image (81).png" alt="" width="375"><figcaption></figcaption></figure>
+
+        </div>
