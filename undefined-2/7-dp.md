@@ -4,7 +4,7 @@
 
 <mark style="background-color:green;">**문제 분류 : 왼쪽 냅색 ( 다른 애들 더해주기 ) DP**</mark>
 
-![](<../.gitbook/assets/image (3) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (3) (1) (1) (1) (1).png>)
 
 * 경우의 수 : 더하기
 * 무한대 -> 왼쪽부터 dp 누적
@@ -13,7 +13,7 @@
 
 #### (2) 7-I:4781 사탕가게
 
-![](<../.gitbook/assets/image (2) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (2) (1) (1) (1) (1).png>)
 
 * 실수형 연산
 * 무한대 -> 왼쪽부터 dp 누적&#x20;
@@ -47,11 +47,11 @@
   * <mark style="background-color:green;">**값이 무제한이 아니라 할당양이 한정된 경우에는 오른쪽에서 부터 시작하는 DP를 써야한다.**</mark>
   *   <mark style="background-color:green;">**푸는 원리**</mark>
 
-      <figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
   * <mark style="background-color:red;">**틀린 방법**</mark>
     *
 
-        <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+        <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 
 

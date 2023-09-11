@@ -12,7 +12,7 @@
 
 ![](<../../../.gitbook/assets/image (11) (1).png>)
 
-![](<../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png>)
 
 * **하나의 노드가 나타내는 값 중 알수 있는 정보는, 그노드가 나타내는 범위의**\
   **last index** 이다.
