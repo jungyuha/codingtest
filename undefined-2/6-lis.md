@@ -1,5 +1,9 @@
 # \[6] 이분탐색,LIS 솔루션
 
+#### (F) _6 - F : 16434_ 드래곤 앤 던전
+
+{% embed url="http://boj.kr/1700a29f60304c88bf47ac4928ec080c" %}
+
 #### (G) 6-G:1072 게임
 
 {% embed url="http://boj.kr/2d466352283f4b9ba1e5e0c2864a8ed8" %}
