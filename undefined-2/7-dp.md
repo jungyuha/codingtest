@@ -4,7 +4,7 @@
 
 <mark style="background-color:green;">**문제 분류 : 왼쪽 냅색 ( 다른 애들 더해주기 ) DP**</mark>
 
-![](<../.gitbook/assets/image (3) (1) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png>)
 
 * 경우의 수 : 더하기
 * 무한대 -> 왼쪽부터 dp 누적
@@ -13,7 +13,7 @@
 
 #### (2) 7-I:4781 사탕가게
 
-![](<../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png>)
 
 * 실수형 연산
 * 무한대 -> 왼쪽부터 dp 누적&#x20;
@@ -47,11 +47,11 @@
   * <mark style="background-color:green;">**값이 무제한이 아니라 할당양이 한정된 경우에는 오른쪽에서 부터 시작하는 DP를 써야한다.**</mark>
   *   <mark style="background-color:green;">**푸는 원리**</mark>
 
-      <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
   * <mark style="background-color:red;">**틀린 방법**</mark>
     *
 
-        <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+        <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 
 
@@ -103,3 +103,15 @@
 #### (Q) _7 - Q : 1344_ 축구
 
 {% embed url="http://boj.kr/21dcfcb491724456838629636319d766" %}
+
+#### (R) 7-R:10942 팰린드롬?
+
+{% embed url="http://boj.kr/fca6ee00be804cfabbc8c8090225bfd0" %}
+
+* <mark style="background-color:green;">**문제 분류 1 : DP**</mark>
+  * ![](<../.gitbook/assets/image (100).png>)
+* 무식하게 풀 때 시간 복잡도 : NC2(n개중에 2개 고르고)xN(각각 비교하기)->40억 너무큼
+* <mark style="background-color:blue;">문제 핵심 1 : i\~j 범위의 펠린드롬 여부를 나타내는 boolean 2차원 배열 필요</mark>
+  * <mark style="background-color:blue;">dp\[i]\[i] = true</mark>
+  * <mark style="background-color:blue;">dp\[i]==dp\[i+1] -> true</mark>
+  * <mark style="background-color:blue;">펠린드롬인것에 양쪽 요소 1개가 서로 같으면 그것도 -> true</mark>&#x20;

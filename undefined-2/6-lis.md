@@ -1,5 +1,17 @@
 # \[6] 이분탐색,LIS 솔루션
 
+#### (E) 6-E:1269 대칭 차집합
+
+{% embed url="http://boj.kr/1a4dbe0e0cb2415997acff8fc37819bc" %}
+
+* 무식하게 풀기 시간 복잡도 : 200000x200000 = 40000000000 (400억)
+* <mark style="background-color:green;">**문제 분류 1 : 카운팅**</mark>
+  * ![](<../.gitbook/assets/image (102).png>)
+  * 카운팅했을 때 1인 것들만 따로 모으면 된다.
+* <mark style="background-color:blue;">**문제 핵심 1 : map 사용**</mark>
+  * <mark style="background-color:blue;">**map에 입력을 받고 map을 순회한다.**</mark>
+    * ![](<../.gitbook/assets/image (103).png>)
+
 #### (F) _6 - F : 16434_ 드래곤 앤 던전
 
 {% embed url="http://boj.kr/1700a29f60304c88bf47ac4928ec080c" %}
@@ -69,7 +81,7 @@
 * 로직을 나눠서 하나씩 증명해보기 (곱했을 때 커지면 유지 , 작아지면 새롭게)
   * **1) 0.5 , 1 ,  2**
     * 0.5 -> 0.5 -> 1
-    * ![](<../.gitbook/assets/image (3) (1) (1) (1).png>)
+    * ![](<../.gitbook/assets/image (3) (1) (1) (1) (1).png>)
       * 2를 곱하는 순간 2보다 더 작아진다. 그러므로 2부터 다시 시작
   * **2) 100 , 0.5 , 8**
     * 100 -> 20(>0.5) -> 160
