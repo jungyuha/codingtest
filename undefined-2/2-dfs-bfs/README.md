@@ -78,3 +78,13 @@
 #### (Q) _2 - Q : 2636_ 치즈
 
 {% embed url="http://boj.kr/6ac357f0b594460389f0d086aefb2a5d" %}
+
+#### (R) 2-R:1068 트리
+
+{% embed url="http://boj.kr/ce4d012c085a44918188cb28f01032b0" %}
+
+* <mark style="background-color:green;">**문제 분류 1 : DFS**</mark>
+  * <mark style="background-color:green;">**루트 노드부터 출발**</mark>
+  * ![](<../../.gitbook/assets/image (2).png>)
+* <mark style="background-color:blue;">**반례 체크**</mark>
+  * ![](<../../.gitbook/assets/image (3).png>)
